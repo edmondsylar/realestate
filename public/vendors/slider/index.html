@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>otsSlider</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div class="ots-slider-wrapper" data-style="full-screen" data-slider="ots-slider">
+    <div class="ots-slider">
+        <div class="item">
+            <div class="outer" style="background-image: url('images/img1.jpg');"></div>
+            <div class="inner">
+                <div class="img" style="background-image: url('images/img1.jpg');"></div>
+            </div>
+        </div>
+        <div class="item">
+            <div class="outer" style="background-image: url('images/img2.jpg');"></div>
+            <div class="inner">
+                <div class="img" style="background-image: url('images/img2.jpg');"></div>
+            </div>
+        </div>
+        <div class="item">
+            <div class="outer" style="background-image: url('images/img3.jpg');"></div>
+            <div class="inner">
+                <div class="img" style="background-image: url('images/img3.jpg');"></div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="ots-slick-wrapper">
+    <div class="ots-slick">
+        <div class="item item-1">
+            <div class="outer"><img src="images/img4.jpg" alt=""></div>
+        </div>
+        <div class="item item-2">
+            <div class="outer"><img src="images/img5.jpg" alt=""></div>
+        </div>
+        <div class="item item-3">
+            <div class="outer"><img src="images/img6.jpg" alt=""></div>
+        </div>
+        <div class="item item-4">
+            <div class="outer"><img src="images/img7.jpg" alt=""></div>
+        </div>
+        <div class="item item-5">
+            <div class="outer"><img src="images/img4.jpg" alt=""></div>
+        </div>
+        <div class="item item-6">
+            <div class="outer"><img src="images/img5.jpg" alt=""></div>
+        </div>
+        <div class="item item-7">
+            <div class="outer"><img src="images/img6.jpg" alt=""></div>
+        </div>
+        <div class="item item-8">
+            <div class="outer"><img src="images/img7.jpg" alt=""></div>
+        </div>
+        <div class="item item-9">
+            <div class="outer"><img src="images/img4.jpg" alt=""></div>
+        </div>
+        <div class="item item-10">
+            <div class="outer"><img src="images/img5.jpg" alt=""></div>
+        </div>
+        <div class="item item-11">
+            <div class="outer"><img src="images/img6.jpg" alt=""></div>
+        </div>
+        <div class="item item-12">
+            <div class="outer"><img src="images/img7.jpg" alt=""></div>
+        </div>
+    </div>
+</div>
+<script src="js/jquery-3.3.1.min.js"></script>
+<script src="js/imagesloaded.pkgd.min.js"></script>
+<script src="js/otsSlider.js"></script>
+<script>
+    (function ($) {
+        $('.ots-slider-wrapper').otsSlider({
+            autoplay: true,
+        });
+        $('.ots-slick-wrapper').otsSlicker({
+            items: 5,
+            margin: 10
+        });
+    })(jQuery);
+</script>
+</body>
+</html>
+<!--https://hopdeco.ca/en-->
+<!--https://www.66nord.com/-->

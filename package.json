@@ -1,0 +1,52 @@
+{
+    "private": true,
+    "scripts": {
+        "dev": "npm run development",
+        "development": "cross-env NODE_ENV=development node_modules/webpack/bin/webpack.js --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
+        "watch": "npm run development -- --watch",
+        "watch-poll": "npm run watch -- --watch-poll",
+        "hot": "cross-env NODE_ENV=development node_modules/webpack-dev-server/bin/webpack-dev-server.js --inline --hot --config=node_modules/laravel-mix/setup/webpack.config.js",
+        "prod": "npm run production",
+        "production": "cross-env NODE_ENV=production node_modules/webpack/bin/webpack.js --no-progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "settings-dev": "cross-env NODE_ENV=development webpack --watch --mode=development --config assets/src/webpack.settings.dev.config.js",
+        "settings-build": "cross-env NODE_ENV=production webpack --progress --hide-modules --mode=production --config assets/src/webpack.settings.prod.config.js"
+    },
+    "devDependencies": {
+        "@babel/core": "^7.6.4",
+        "@babel/polyfill": "^7.0.0",
+        "@babel/preset-env": "^7.1.0",
+        "@babel/preset-react": "^7.0.0",
+        "axios": "^0.19.0",
+        "babel-loader": "^8.0.2",
+        "bootstrap": "^4.1.0",
+        "cross-env": "^5.1",
+        "extract-text-webpack-plugin": "^3.0.2",
+        "flag-icon-css": "^3.4.5",
+        "gulp": "^4.0.2",
+        "gulp-autoprefixer": "^6.0.0",
+        "gulp-babel": "^8.0.0",
+        "gulp-concat": "^2.6.1",
+        "gulp-sass": "^4.0.2",
+        "gulp-scss": "^1.4.0",
+        "jquery": "^3.2",
+        "laravel-mix": "^4.0.7",
+        "less-loader": "^4.1.0",
+        "popper.js": "^1.12",
+        "resolve-url-loader": "^2.3.1",
+        "sass": "^1.15.2",
+        "sass-loader": "^7.1.0",
+        "uglify-js": "^3.5.4",
+        "uglifyjs": "^2.4.11",
+        "vee-validate": "^3.0.3",
+        "vue": "^2.6.10",
+        "vue-template-compiler": "^2.6.10"
+    },
+    "dependencies": {
+        "@johmun/vue-tags-input": "^2.1.0",
+        "gulp-bower": "0.0.15",
+        "gulp-cssnano": "^2.1.3",
+        "gulp-uglify": "^3.0.2",
+        "tinymce": "^5.0.16"
+    }
+}
